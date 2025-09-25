@@ -53,16 +53,17 @@ If you want to make changes or rebuild the app:
 ```bash
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
+```
 
 2. Create and activate a virtual environment:
-python -m venv venv
-venv\Scripts\activate   # Windows
+   python -m venv venv
+   venv\Scripts\activate # Windows
 
 3. Install dependencies:
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 4. Build the standalone executable using PyInstaller:
-pyinstaller --onefile --windowed --name=MIDI3000 --icon=assets/midi_icon.ico --add-data "assets/midi_icon.ico;assets" app.py
+   pyinstaller --onefile --windowed --name=MIDI3000 --icon=assets/midi_icon.ico --add-data "assets/midi_icon.ico;assets" app.py
 
 5. The .exe will be in the dist/ folder.
 
@@ -71,16 +72,16 @@ Folder Structure
 MIDI3000/
 ├── app.py
 ├── assets/
-│   └── midi_icon.ico
+│ └── midi_icon.ico
 ├── requirements.txt
 ├── README.md
 └── dist/
-    └── MIDI3000.exe  # built executable
+└── MIDI3000.exe # built executable
 
 assets/ — contains icons or images used in the GUI.
 dist/ — output folder created by PyInstaller when building the exe.
 
-Troubleshooting
+## Troubleshooting
 
 If the app fails to find the icon, ensure it is in assets/midi_icon.ico.
 
@@ -88,7 +89,7 @@ If the app can’t generate MIDI, check that the Python script is compatible (se
 
 On Windows, ensure the .exe is not already running when rebuilding with PyInstaller (prevents access errors).
 
-Contributing
+## Contributing
 
 Feel free to fork the repo and submit pull requests. When contributing:
 
@@ -96,7 +97,6 @@ Keep the assets/ folder organized.
 
 Ensure Python scripts generated are compatible with generate_midi(output_path).
 
-License
+## License
 
 This project is open-source and available under the MIT License.
-```
