@@ -38,9 +38,18 @@ When asking ChatGPT to generate MIDI scripts for MIDI3000, keep these guidelines
 - Ensure the Python script either contains a `generate_midi(output_path)` function or produces a `.mid` file in the script’s directory.
 - Always pass the output filename as a parameter when possible.
 - Example prompt:
-  Generate a Python script that creates a 16-bar drum pattern MIDI file and writes it to a given output path. The script should define a function called generate_midi(output_path) so it is compatible with MIDI3000.
 
-- Avoid scripts that require interactive input, as MIDI3000 does not handle console input.
+```bash
+  Generate a Python MIDI script in the same format as this template:
+
+    Must define a function generate_midi(output_path)
+
+    Must save the MIDI file to output_path
+
+    Should not require user input
+
+    Should be compatible with MIDI3000
+```
 
 ---
 
