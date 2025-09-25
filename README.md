@@ -17,7 +17,7 @@ It features a user-friendly interface, allows you to select input `.py` scripts,
 
 ## **Download**
 
-You can download the latest **MIDI3000.exe** from the [Releases](https://github.com/<your-username>/<repo-name>/releases) page.
+You can download the latest **MIDI3000.exe** from the [Releases](https://github.com/jham93/MIDI3000/releases) page.
 
 ---
 
