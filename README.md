@@ -56,19 +56,29 @@ cd <repo-name>
 ```
 
 2. Create and activate a virtual environment:
+
+```bash
    python -m venv venv
    venv\Scripts\activate # Windows
+```
 
 3. Install dependencies:
+
+```bash
    pip install -r requirements.txt
+```
 
 4. Build the standalone executable using PyInstaller:
+
+```bash
    pyinstaller --onefile --windowed --name=MIDI3000 --icon=assets/midi_icon.ico --add-data "assets/midi_icon.ico;assets" app.py
+```
 
 5. The .exe will be in the dist/ folder.
 
 Folder Structure
 
+```bash
 MIDI3000/
 ├── app.py
 ├── assets/
@@ -77,6 +87,7 @@ MIDI3000/
 ├── README.md
 └── dist/
 └── MIDI3000.exe # built executable
+```
 
 assets/ — contains icons or images used in the GUI.
 dist/ — output folder created by PyInstaller when building the exe.
